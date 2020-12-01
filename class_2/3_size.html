@@ -6,10 +6,36 @@
     <title>html</title>
 		<style>
 			body, h1{margin:0}
-			
-			.wrap{width:700px; height:400px; background:#ccc}
-
-			
+			.wrap{
+				width:700px; 
+				height:400px; 
+				background:#ccc;
+				padding: 20px;
+			}
+				
+			.box_input{
+				border: 1px solid #f37537;
+				width: 600px;
+				background: #fff;
+				height: 30px;
+			}
+			.box_input>input{
+				height: 30px;
+				/* calc를 활용한 방법 */
+				/*  */
+				width: calc(100% - 100px);
+				vertical-align: middle;
+				border: none;
+				box-sizing: border-box;
+			}
+			.box_input>button{
+				width: 85px;
+				height: 28px;
+				vertical-align: middle;
+				border: none;
+				background: transparent;
+				box-sizing: border-box;
+			}
 		</style>
 
   </head>
@@ -18,7 +44,7 @@
 			<div class="unit">
 				<div class="box_input">
 					<input>
-					<button></button>
+					<button>버튼</button>
 				</div>
 			</div>
 		</div>
