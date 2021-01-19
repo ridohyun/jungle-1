@@ -1,3 +1,9 @@
+.section{
+	display: none;
+}
+.section.on{
+	display: block;
+}
 .box_intro{
 	padding:30px 0;
 	text-align: center;
@@ -52,6 +58,8 @@
   text-indent: -9999px;
   cursor:default;
 }
+
+/* 선택된 자리 */
 .section.reservation .unit button.select{
 	background: #FF5F40;
   color:#fff;
